@@ -1,0 +1,25 @@
+<idea-plugin>
+    <id>itexplore.cn.gout</id>
+    <name>go_test_plugin</name>
+    <vendor email="qinxiongzhou@gmail.com" url="http://www.itexplore.com">itexplore</vendor>
+
+    <description><![CDATA[
+    go test plugin.Generate HTML files<br>
+    <em>go test plugin</em>
+    ]]></description>
+
+    <!-- please see https://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+         on how to target different products -->
+    <depends>com.intellij.modules.platform</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- Add your extensions here -->
+    </extensions>
+
+    <actions>
+        <!-- Add your actions here -->
+        <action id="gotest" class="GotestAction" text="Gotest" description="go test 插件">
+            <add-to-group group-id="ToolsMenu" anchor="first"/>
+        </action>
+    </actions>
+</idea-plugin>
